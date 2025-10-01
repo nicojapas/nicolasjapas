@@ -1,3 +1,14 @@
+// Mobile menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('nav ul');
+const socialLinks = document.querySelector('.social-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    socialLinks.classList.toggle('active');
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -14,6 +25,13 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
                 link.classList.remove('active');
             });
             this.classList.add('active');
+
+            // Close mobile menu after clicking a link
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                socialLinks.classList.remove('active');
+            }
         }
     });
 });

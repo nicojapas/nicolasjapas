@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Japas - Music & Art Portfolio</title>
+    <title>Nicolás Japas - Official Website</title>
+    <meta name="description" content="Nicolás Japas - Guitarist, Composer, and Artist. Solo tango guitar arrangements, illustrations, and music projects.">
+    <link href='https://fonts.googleapis.com/css?family=Libre Franklin' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/cropped-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/cropped-favicon-192x192.png" sizes="192x192">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +20,11 @@
             </div>
         </div>
         <nav>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#music">Music</a></li>
@@ -24,73 +34,236 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-links">
-                <a href="https://soundcloud.com/nicolasjapas" target="_blank">SoundCloud</a>
-                <a href="https://instagram.com/nicolasjapas" target="_blank">Instagram</a>
-                <a href="https://youtube.com/@nicolasjapas" target="_blank">YouTube</a>
+                <a href="https://soundcloud.com/nicojapas" target="_blank" title="SoundCloud">
+                    <i class="fa-brands fa-soundcloud"></i> SoundCloud
+                </a>
+                <a href="https://instagram.com/nico.mus1ca" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://youtube.com/@nico-mus1ca" target="_blank" title="YouTube">
+                    <i class="fa-brands fa-youtube"></i> YouTube
+                </a>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- HOME / BLOG SECTION -->
         <section id="home" class="section">
             <div class="container">
                 <h2>Welcome</h2>
+                <p class="intro-text">Welcome to my site 😊 Here you can find my music to download, info on my next concerts and links to the various artistic projects I carry on; but also photos, illustrations, texts on the most diverse subjects and different things that I'll be uploading.</p>
+
                 <div class="blog-posts">
-                    <!-- Add your blog posts/news here -->
                     <article class="post">
-                        <h3>Latest Updates</h3>
-                        <p>Recent music releases and performances</p>
+                        <h3>Más música por favor …</h3>
+                        <p class="date">August 4, 2023</p>
+                        <p>My music is now available on multiple streaming platforms including <a href="https://open.spotify.com/artist/2qr6w15km0HhOxLbk4ySBU" target="_blank">Spotify</a>, iTunes, YouTube Music, Amazon, and Deezer. Check out my new song "Too Late" available on Spotify!</p>
+                    </article>
+
+                    <article class="post">
+                        <h3>SoundCloud</h3>
+                        <p class="date">July 23, 2022</p>
+                        <p>I finally updated my SoundCloud account a little bit 🙂 Check it out and say hi!</p>
+                    </article>
+
+                    <article class="post">
+                        <h3>Por una cabeza – Tango</h3>
+                        <p class="date">May 24, 2020</p>
+                        <p>A popular tango composed by Carlos Gardel (music) and Alfredo Le Pera (lyrics) in New York City in 1935. Solo guitar arrangement.</p>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <h3>Naranjo en flor – Tango</h3>
+                        <p class="date">May 12, 2020</p>
+                        <p>"Naranjo en flor" is a tango composed by Virgilio and Homero Expósito in 1944. It's considered one of the most characteristic tangos of Río de la Plata music. Solo guitar arrangement.</p>
+                    </article>
+
+                    <article class="post">
+                        <h3>Volver</h3>
+                        <p class="date">March 11, 2020</p>
+                        <p>Guitar arrangement of "Volver", a famous tango composed by Carlos Gardel in 1934, with lyrics by Alfredo Le Pera.</p>
+                    </article>
+
+                    <article class="post">
+                        <h3>Tango en Wedding</h3>
+                        <p class="date">August 1, 2019</p>
+                        <p>Recording at "KellerTone", a recording studio located in the basement of an old Berlin building in the Wedding neighborhood. Recording tango music from the 1930s and 1940s. Peter Kolpakov, the studio owner, described it as "a time machine."</p>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- MUSIC SECTION -->
         <section id="music" class="section">
             <div class="container">
                 <h2>Music</h2>
                 <div class="music-grid">
-                    <!-- Add your music content, embedded players, etc. -->
                     <div class="music-item">
-                        <h3>Tango Guitar Performances</h3>
-                        <p>Explore my latest recordings and performances</p>
+                        <h3>Tango Solista</h3>
+                        <p>Solo guitar arrangements of classic tangos from the 1930s and 1940s. Traditional Argentine tango repertoire featuring beloved compositions by Carlos Gardel and other masters.</p>
+                        <div class="streaming-links">
+                            <a href="https://open.spotify.com/artist/2qr6w15km0HhOxLbk4ySBU" target="_blank" class="btn">
+                                <i class="fa-brands fa-spotify"></i> Spotify
+                            </a>
+                            <a href="https://soundcloud.com/nicojapas" target="_blank" class="btn">
+                                <i class="fa-brands fa-soundcloud"></i> SoundCloud
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="music-item">
+                        <img src="images/projects/mrtofu.png" alt="Mr. Tofu">
+                        <h3>Mr. Tofu</h3>
+                        <p>Musical project exploring contemporary sounds and experimental compositions.</p>
+                        <a href="https://instagram.com/mr.tofu.music" target="_blank" class="btn">
+                            <i class="fa-brands fa-instagram"></i> @mr.tofu.music
+                        </a>
+                    </div>
+
+                    <div class="music-item">
+                        <img src="images/projects/astra-noctis-header-1.jpg" alt="Astra Noctis">
+                        <h3>Astra Noctis</h3>
+                        <p>Atmospheric and cinematic musical journey through sound and emotion.</p>
+                        <a href="https://instagram.com/astra.noctis" target="_blank" class="btn">
+                            <i class="fa-brands fa-instagram"></i> @astra.noctis
+                        </a>
+                    </div>
+
+                    <div class="music-item">
+                        <h3>Conurbano Tango</h3>
+                        <p>Tango-related musical project with connections to the Conurbano region of Argentina.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ILLUSTRATIONS SECTION -->
         <section id="illustrations" class="section">
             <div class="container">
                 <h2>Illustrations</h2>
                 <div class="gallery">
-                    <!-- Add your illustration gallery here -->
+                    <div class="gallery-item">
+                        <img src="images/illustrations/20200329_Parar_el_pais-min-1.jpg" alt="Well, well… ¿how much longer you want the country idle?">
+                        <div class="caption">
+                            <p>Well, well… ¿how much longer you want the country idle?</p>
+                            <span class="date">March 29, 2020</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/illustrations/20200329_Redacta_Aprueba_2-min.png" alt="Write, Approve">
+                        <div class="caption">
+                            <p>Redacta, Aprueba (Write, Approve)</p>
+                            <span class="date">March 29, 2020</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/illustrations/20181117_Caballitos_daneses-min.jpg" alt="Danish Horsies">
+                        <div class="caption">
+                            <p>Caballitos daneses (Danish Horsies)</p>
+                            <span class="date">November 17, 2018</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/illustrations/20180918_Go_to_China-min-1.jpg" alt="I'm from the future, you should go to China">
+                        <div class="caption">
+                            <p>I'm from the future, you should go to China</p>
+                            <span class="date">September 18, 2018</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
-                    <p>Add your bio and information here</p>
+                    <img src="images/Nico-Japas-03.jpg" alt="Nicolás Japas" class="profile-photo">
+                    <div class="bio">
+                        <p>Nicolás Japas is a guitarist, composer, and artist specializing in tango music and contemporary compositions. With a deep appreciation for the classic tangos of the 1930s and 1940s, Nicolás creates solo guitar arrangements that honor the traditional Argentine repertoire while bringing his unique artistic vision to each performance.</p>
+
+                        <p>Based between Argentina and Berlin, Nicolás has recorded at renowned studios including KellerTone in Berlin's Wedding neighborhood, where he captured the essence of tango music in an intimate, analog setting.</p>
+
+                        <p>Beyond music, Nicolás is also an accomplished illustrator, creating thought-provoking artwork that explores social and political themes. His diverse artistic projects include Mr. Tofu, Astra Noctis, and Conurbano Tango, each offering a different facet of his creative expression.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- PHOTOS SECTION -->
         <section id="photos" class="section">
             <div class="container">
                 <h2>Photos</h2>
+                <p class="photo-credit">Photos by Santiago Casal</p>
                 <div class="photo-gallery">
-                    <!-- Add your photo gallery here -->
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-01.jpg" alt="Nicolás Japas at Yard Guerrilla Records, Berlin">
+                        <p class="photo-caption">Yard Guerrilla Records, Berlin</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-02.jpg" alt="Nicolás Japas">
+                        <p class="photo-caption">Yard Guerrilla Records, Berlin</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-03.jpg" alt="Nicolás Japas">
+                        <p class="photo-caption">Yard Guerrilla Records, Berlin</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-04.jpg" alt="Nicolás Japas">
+                        <p class="photo-caption">Endless guitar arrangements at DQV Studio</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-06.jpg" alt="Nicolás Japas at RAW Berlin">
+                        <p class="photo-caption">RAW Berlin</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/Nico-Japas-07.jpg" alt="Nicolás Japas at RAW Berlin">
+                        <p class="photo-caption">In RAW Gelände, Berlin</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/001_en.jpg" alt="Recording session">
+                        <p class="photo-caption">Recording «Un Valle»</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/002_en.jpg" alt="Studio session">
+                        <p class="photo-caption">Fender Deluxe</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/003_en.jpg" alt="Performance">
+                        <p class="photo-caption">Soloing time?</p>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photos/006_en.jpg" alt="Astra Noctis">
+                        <p class="photo-caption">Astra Noctis at Sala Mentruyt</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact</h2>
                 <div class="contact-info">
-                    <p>Get in touch for collaborations and inquiries</p>
-                    <!-- Add contact form or information here -->
+                    <p>For comments, questions or private concerts please write to:</p>
+                    <p class="email"><a href="mailto:info@nicolasjapas.com">info@nicolasjapas.com</a></p>
+
+                    <div class="contact-social">
+                        <a href="https://soundcloud.com/nicojapas" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-soundcloud"></i>
+                        </a>
+                        <a href="https://instagram.com/nico.mus1ca" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@nico-mus1ca" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
